@@ -1,67 +1,163 @@
 {% load static %}
 
 <!DOCTYPE html>
-    <html>
+<html>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Home</title>
-        
-        <link rel="stylesheet" href="{% static 'buy/home.css' %} ">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{% static 'buy/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
 
-    <body>
-        <div data-layer="95be8814-1d71-4931-87bf-5cd814201a53" class="home">        
-            <div data-layer="5613e703-4333-4714-9727-2b249c532df5" class="rectangle2">
-
+<body>
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand" href="{% url 'landing' %}">G R A T E</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"></div><a class="btn btn-primary ml-auto" role="button" href="{% url 'login' %}">Log In</a><a class="btn btn-primary ml-auto" role="button" href="#">Sign In</a><a class="btn btn-primary ml-auto" role="button" href="#">Explore</a></div>
+    </nav><header class="masthead text-white text-center" style="background:url('assets/img/100615449_823526338179058_9040807438256701440_n.jpg')no-repeat center center;background-size:cover;">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h1 class="mb-5">Revolutionizing Online Shopping</h1>
             </div>
-        <div data-layer="7a46a2dc-a8d4-4be9-9389-d7dba440108f" class="group3">            
-            <div data-layer="d08c2bf5-60c1-4c5a-9ea4-e216f82c308f" class="rectangle3">
-            
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <form>
+                    <div class="form-row">
+                        <div class="col-12 col-md-9 mb-2 mb-md-0"><input type="search" class="form-control form-control-lg" placeholder="What Interests You..." /></div>
+                        <div class="col-12 col-md-3"><a href="{% url 'shop' %}"><button class="btn btn-primary btn-block btn-lg" type="submit">Search</button></a></div>
+                    </div>
+                </form>
             </div>
-            <div data-layer="565c8d1e-e1cc-4581-a1a9-a8bbf01271dd" class="signUp">
-                <span class="signUp-0">SIGN UP</span>
-            </div>
-</div>
-        <div data-layer="55e0ef15-0489-415c-97cc-90615eca5ea4" class="group2">            
-            <div data-layer="9e096fd2-88d8-4569-96de-bf39063f7a6f" class="rectangle31cd1a298">
-
-            </div>
-            <div data-layer="3f6edd63-c9e1-457a-80d6-5d8e6d1cd2a3" class="logIn">
-                <a href="image1.png" style="text-decoration: none;" style = "color: inherit;"  >LOG IN</a> 
-            </div>
-</div>
-        <div data-layer="fe16bf87-8cd1-4578-ad0a-5e5ed25bf5f5" class="group1">            
-            <div data-layer="57aa3a73-9e72-4539-87d0-0ab4ad8aa21a" class="rectangle4">
-                <img class="image1" src="{% static 'buy/image1.png' %}">
-            </div>
-            <div data-layer="ebf2a832-5389-46ac-8d0d-0f4e2c215436" class="contact">
-                CONTACT
-            </div>
-</div>
-        <div data-layer="62749361-e445-47ee-b55d-7657d2ab6ab7" class="rectangle5">
-
         </div>
-        <div data-layer="37030e6e-c194-4c6c-ac8d-dfacd6a9d1c8" class="logo">            
-            <svg data-layer="ebbeaa68-0b24-4a4c-94f4-b5d9be4d0b2c" preserveAspectRatio="none" viewBox="-0.75 -0.75 81.5 81.5" class="ellipse1"><path d="M 40 0 C 62.09139251708984 0 80 17.90860939025879 80 40 C 80 62.09139251708984 62.09139251708984 80 40 80 C 17.90860939025879 80 0 62.09139251708984 0 40 C 0 17.90860939025879 17.90860939025879 0 40 0 Z"  />
-            </svg> 
-            <svg data-layer="5446a1f9-459b-4639-9b4e-da37afc62329" preserveAspectRatio="none" viewBox="28.055776596069336 17.76970672607422 70.2020263671875 99.1552734375" class="path4"><path d="M 52.43767929077148 77.94387054443359 C 95.57431793212891 46.0397834777832 109.0487213134766 -20.60998344421387 89.46906280517578 46.93250274658203 C 69.88941192626953 114.4749755859375 116.2409591674805 86.91828918457031 52.43767929077148 109.1998291015625 C -11.36561107635498 131.4813842773438 69.56455230712891 98.82576751708984 75.27351379394531 95.36772155761719"  />
-            </svg>
-</div> 
-        <img class="image1" src="https://images.unsplash.com/photo-1504261706280-e39fe8b1cf58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
-        <div data-layer="8f77a4fe-7475-4834-96cc-2e21ff2ca7bc" class="findYourPassionWithoutLoosingYourMoney">
-            Find 
-            <br />your passion without loosing your money
+    </div>
+</header>
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3>Support for New Platforms</h3>
+                        <p class="lead mb-0">Our wesbsite now provides support for all browsers. Mobile support coming soon!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-game-controller m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3>Indie Game support for new creators</h3>
+                        <p class="lead mb-0">Now releasing an option to back upcoming Video Game developers. Go to our Shop Page for more Information.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-wallet m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3>Easy on your Wallet</h3>
+                        <p class="lead mb-0">As always, our goal is to minimize the stress on your wallet. Shop with other people who share you niche interests.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div data-layer="4e0eee3f-f0cc-4e3a-9b93-0df8e735cacb" class="rectangle6">
-
+    </section>
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-1.jpg&quot;);"><span></span><img src="assets/img/post-132285-0-14755800-1556896580.jpg"></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>How We Started</h2>
+                    <p class="lead mb-0">It's very difficult for us, as consumers, to find items that aren't very available on the market, for example Fountain Pens. We decided to create Grate to allow users to find items that are in niche categories, all for a lower price!</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-2.jpg&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Your Privacy is of Utmost Importance</h2>
+                    <p class="lead mb-0">All your information is encrypted by our team of developers. You should have no worry as to where your private information will land up.</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-3.jpg&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Easy to Use</h2>
+                    <p class="lead mb-0">Our website is very user-friendly, and made for everyone to use. Thanks for checking us out!</p>
+                </div>
+            </div>
         </div>
-        <svg data-layer="fa804b3e-bd2c-4c9c-8aff-fa952c88d958" preserveAspectRatio="none" viewBox="-812.8827514648438 -32.907875061035156 1885 264.1009216308594" class="path5"><path d="M 1069.342529296875 -18.03910255432129 C 1069.342529296875 -18.03910255432129 1036.4736328125 -51.49383544921875 1069.342529296875 -18.03910255432129 C 1102.211303710938 15.41562366485596 832.21435546875 148.7989196777344 832.21435546875 148.7989196777344 C 832.21435546875 148.7989196777344 670.5709228515625 225.6924285888672 459.6167297363281 230.9117736816406 C 342.3463745117188 233.8133697509766 210.2991333007812 214.8043975830078 81.96002197265625 148.7989196777344 C -278.5384826660156 -36.60735702514648 -812.8827514648438 148.7989196777344 -812.8827514648438 148.7989196777344 L -812.8827514648438 -18.03910255432129 L 1069.342529296875 -18.03910255432129 L 1069.342529296875 -18.03910255432129"  />
-        </svg>
-</div>
+    </section>
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">What people are saying about our website...</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-1.jpg">
+                        <h5>Margaret E.</h5>
+                        <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-2.jpg">
+                        <h5>Fred S.</h5>
+                        <p class="font-weight-light mb-0">"This place is awesome! Some of the things I buy, I can't really find online. But with the niche items here, there isn't a thing that I can't find!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-3.jpg">
+                        <h5>Sarah W.</h5>
+                        <p class="font-weight-light mb-0">"Thanks so much for making these resources available to us!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section class="call-to-action text-white text-center" style="background:url('assets/img/bg-showcase-1.jpg') no-repeat center center;background-size:cover;">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <form>
+                    <div class="form-row">
+                        <div class="col-12 col-md-9 mb-2 mb-md-0"><input type="email" class="form-control form-control-lg" placeholder="Enter your email..." /></div>
+                        <div class="col-12 col-md-3"><a href="{% url 'register' %}"><button class="btn btn-primary btn-block btn-lg" type="submit">Sign up!</button></a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© GRATE 2020. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'buy/js/landing.min.js' %}"></script>
+</body>
 
-
-    
-    </body>
-    </html>
-            
+</html>
