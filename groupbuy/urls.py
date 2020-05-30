@@ -22,5 +22,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name = 'register'),
+    path('login/', user_views.login, name='login'),
     path('', buy_views.landing, name = 'landing'),
+    path('shop/', buy_views.ShopView.as_view, name='shop'),
 ]

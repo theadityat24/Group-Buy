@@ -18,7 +18,7 @@
     <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
         <div class="container"><a class="navbar-brand" href="{% url 'landing' %}">G R A T E</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
             <div class="collapse navbar-collapse" id="navcol-1"></div><a class="btn btn-primary ml-auto" role="button" href="{% url 'login' %}">Log In</a><a class="btn btn-primary ml-auto" role="button" href="#">Sign In</a><a class="btn btn-primary ml-auto" role="button" href="#">Explore</a></div>
-    </nav><header class="masthead text-white text-center" style="background:url('assets/img/100615449_823526338179058_9040807438256701440_n.jpg')no-repeat center center;background-size:cover;">
+    </nav><header class="masthead text-white text-center" style="background:url('{% static "buy/images/100615449_823526338179058_9040807438256701440_n.jpg" %}')no-repeat center center;background-size:cover;">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -66,21 +66,21 @@
     <section class="showcase">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
-                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-1.jpg&quot;);"><span></span><img src="assets/img/post-132285-0-14755800-1556896580.jpg"></div>
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;{% static 'buy/images/bg-showcase-1.jpg' %}&quot;);"><span></span><img src="{% static 'buy/images/post-132285-0-14755800-1556896580.jpg' %}"></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
                     <h2>How We Started</h2>
                     <p class="lead mb-0">It's very difficult for us, as consumers, to find items that aren't very available on the market, for example Fountain Pens. We decided to create Grate to allow users to find items that are in niche categories, all for a lower price!</p>
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-2.jpg&quot;);"><span></span></div>
+                <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;{% static 'buy/images/bg-showcase-2.jpg' %}&quot;);"><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
                     <h2>Your Privacy is of Utmost Importance</h2>
                     <p class="lead mb-0">All your information is encrypted by our team of developers. You should have no worry as to where your private information will land up.</p>
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-3.jpg&quot;);"><span></span></div>
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;{% static 'buy/images/bg-showcase-3.jpg' %}&quot;);"><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
                     <h2>Easy to Use</h2>
                     <p class="lead mb-0">Our website is very user-friendly, and made for everyone to use. Thanks for checking us out!</p>
@@ -93,26 +93,26 @@
             <h2 class="mb-5">What people are saying about our website...</h2>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-1.jpg">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'buy/images/testimonials-1.jpg' %}">
                         <h5>Margaret E.</h5>
                         <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-2.jpg">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'buy/images/testimonials-2.jpg' %}">
                         <h5>Fred S.</h5>
                         <p class="font-weight-light mb-0">"This place is awesome! Some of the things I buy, I can't really find online. But with the niche items here, there isn't a thing that I can't find!</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-3.jpg">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'buy/images/testimonials-3.jpg' %}">
                         <h5>Sarah W.</h5>
                         <p class="font-weight-light mb-0">"Thanks so much for making these resources available to us!"</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section><section class="call-to-action text-white text-center" style="background:url('assets/img/bg-showcase-1.jpg') no-repeat center center;background-size:cover;">
+    </section><section class="call-to-action text-white text-center" style="background:url('{% static "buy/images/bg-showcase-1.jpg" %}') no-repeat center center;background-size:cover;">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
