@@ -24,5 +24,7 @@ urlpatterns = [
     path('register/', user_views.register, name = 'register'),
     path('login/', user_views.login, name='login'),
     path('', buy_views.landing, name = 'landing'),
-    path('shop/', buy_views.ShopView.as_view, name='shop'),
+    path('shop/', buy_views.shop_view, name='shop'),
+    path('shop/<id>/', buy_views.shop_detail, name='shop-detail'),
+    path('shop/<id>/checkout', buy_views.checkout, name='checkout'),
 ]
