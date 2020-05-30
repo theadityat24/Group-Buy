@@ -1,0 +1,103 @@
+.search-form {
+  left: -250px;
+}
+
+.col-md-3 {
+  height: 500px;
+  left: 50px;
+  top: 50px;
+}
+
+.img2 {
+  height: 400px;
+  width: 285px;
+}
+
+.img4 {
+  height: 400px;
+  width: 285px;
+}
+
+.img3 {
+  height: 400px;
+  width: 285px;
+}
+
+.img1 {
+  height: 400px;
+  width: 285px;
+}
+
+.filter {
+  /*margin: 100px;*/
+  padding-right: 30px;
+  width: 2000px;
+  /*padding-top: px;*/
+  /*padding-bottom: 0px;*/
+  /*left: 100000px;*/
+  padding-left: 0px;
+}
+
+.row {
+  bottom: 50px;
+  /*padding-right: 100;*/
+  /*top: -1100px;*/
+  /*width: 10;*/
+}
+
+.btn {
+  /*<div><img class="img1" src="https: position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%);  background-color: #555;  color: white;  font-size: 16px;  padding: 12px 24px;  border: none;  cursor: pointer;  border-radius: 5px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  right: 10px;
+  /*color: black;*/
+}
+
+.btn.btn-primary.ml-auto.btn1 {
+  width: 100px;
+  color: rgb(0,123,255);
+}
+
+.col-md-3 {
+  top: -600px;
+}
+
+.row.row1 {
+  height: 50px;
+}
+
+.btn:hover {
+  opacity: 1;
+  /*img1: hover;*/
+}
+
+.butn1 {
+  top: 1000px;
+}
+
+.img1:hover {
+  opacity: .3;
+}
+
+.img2:hover {
+  opacity: .3;
+}
+
+.img3:hover {
+  opacity: .3;
+}
+
+.img4:hover {
+  opacity: .3;
+}
+
