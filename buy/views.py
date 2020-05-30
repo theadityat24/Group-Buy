@@ -10,7 +10,8 @@ def landing(request):
 def shop_view(request):
     buys = Buy.objects.order_by('-date_started')[:8]
     context = {
-        'top': buys,
+        'top1': buys[:4],
+        'top2': buys[4:]
     }
     return render(request, 'buy/shop.html', context=context)
 
