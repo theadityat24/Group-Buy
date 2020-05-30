@@ -7,7 +7,7 @@ class Buy(models.Model):
     date_ended = models.DateTimeField(blank=True, null=True, default=None)
     product_link = models.URLField()
     quantity = models.PositiveIntegerField()
-    price = models.DecimalField()
+    price = models.DecimalField(decimal_places=2, max_digits=12)
 
 class Contribution(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
