@@ -8,6 +8,7 @@ class Buy(models.Model):
     product_link = models.URLField()
     quantity = models.PositiveIntegerField()
     price = models.DecimalField(decimal_places=2, max_digits=12)
+    image = models.ImageField(default='default.jpg', upload_to='product_pics')
 
 class Contribution(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

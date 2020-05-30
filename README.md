@@ -1,5 +1,5 @@
 ## Group Buy
-An entry into RookieHacks 2020
+An entry into RookieHacks 2020. It allows a user to buy an item in bulk and split the cost with other users who want to purchase that item, which would make it way cheaper. 
 
 ## Test Users
 Username: test{id}
