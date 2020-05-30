@@ -8,12 +8,11 @@ class Buy(models.Model):
     product_link = models.URLField()
     quantity = models.PositiveIntegerField()
     price = models.DecimalField()
-    
 
-
-class ContribUser(models.Model):
+class Contribution(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     buy = models.ForeignKey(User, on_delete=models.CASCADE, related_name="contribuserbuy")
+    quantity = models.PositiveSmallIntegerField()
     
 
 
