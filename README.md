@@ -43,8 +43,8 @@ Once you click Group Buy:
   - Maybe some share options and stuff
 
 Login and signup pages
-    - Fairly intuitive
+  - Fairly intuitive
 
 Start a group buy page
-Details such as what the product is, what category it falls in, description, price, etc.
+  - Details such as what the product is, what category it falls in, description, price, etc.
 
