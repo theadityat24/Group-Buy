@@ -13,7 +13,8 @@
 </head>
 
 <body><div class="shopping-cart">
-<form method="POST">
+{}
+<form method="POST" action='..'>{% csrf_token %}
 <div class="px-4 px-lg-0">
 
   <div class="pb-5">
@@ -87,12 +88,12 @@
             <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
             <ul class="list-unstyled mb-4">
               <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>${{ buy.price }}</strong></li>
-              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and handling</strong><strong>$10.00</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and handling</strong><strong>${{ shipping }}</strong></li>
               <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong>$0.00</strong></li>
               <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
-                <h5 class="font-weight-bold">${{ buy.price + 10 }}</h5>
+                <h5 class="font-weight-bold">${{ total }}</h5>
               </li>
-            </ul><button type="submit" class="btn btn-dark rounded-pill py-2 btn-block">Buy</button>
+            </ul><a href="{% url 'thanks' %}" class="btn btn-dark rounded-pill py-2 btn-block">Buy</a>
           </div>
         </div>
       </div>

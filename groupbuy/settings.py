@@ -126,5 +126,13 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'shop'
 LOGIN_URL = 'login'
+
+DEFAULT_FROM_EMAIL = 'grate.ecommerce@gmail.com'
+SERVER_EMAIL = 'grate.ecommerce@gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'grate.ecommerce@gmail.com'
+EMAIL_HOST_PASSWORD = 'Grate!Email!Password!15'

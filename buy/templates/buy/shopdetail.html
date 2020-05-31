@@ -38,9 +38,10 @@
     <div class="progress-bar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 83%;" background-color = "green"> You have until {{ buy.date_ends }}</div>
 </div>
                     <p></p>
-                    <p>&nbsp; &nbsp; &nbsp;</p><strong><br>{{ buy.description }}<br><br><br></strong>
+                    <p>&nbsp; &nbsp; &nbsp;</p><strong><br>{{ buy.description }}  <br><br>{{ contributions }} people have contributed.{{ buy.quantity }} total people need to contribute to meet the goal before {{ buy.date_ends }}<br><br><br></strong>
+                    <a href="{% url 'checkout' buy.pk %}">
                     <button
-                        class="btn btn-primary" type="button">Contribute ${{ buy.price }}</button>
+                        class="btn btn-primary" type="button">Contribute ${{ buy.price }}</button></a>
                         <p><br></p>
                         <div></div>
                         <div></div>
